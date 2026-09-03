@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* GaussianSplatMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* GaussianSplatMobileApp.swift */; };
+		B10000000000000000000002 /* RenderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* RenderStatus.swift */; };
+		B10000000000000000000003 /* MatrixMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* MatrixMath.swift */; };
+		B10000000000000000000004 /* OrbitCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* OrbitCamera.swift */; };
+		B10000000000000000000005 /* GaussianSplatRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* GaussianSplatRenderer.swift */; };
+		B10000000000000000000006 /* MetalSplatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* MetalSplatView.swift */; };
+		B10000000000000000000007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* ContentView.swift */; };
+		B10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* Assets.xcassets */; };
+		B10000000000000000000009 /* sample_scene.ply in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* sample_scene.ply */; };
+		B1000000000000000000000A /* MetalSplatter in Frameworks */ = {isa = PBXBuildFile; productRef = D10000000000000000000002 /* MetalSplatter */; };
+		B1000000000000000000000B /* SplatIO in Frameworks */ = {isa = PBXBuildFile; productRef = D10000000000000000000003 /* SplatIO */; };
+		B1000000000000000000000C /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000000A /* AppLog.swift */; };
+		B1000000000000000000000D /* SceneChunkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000000B /* SceneChunkLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000000 /* GaussianSplatMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaussianSplatMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000001 /* GaussianSplatMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianSplatMobileApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* RenderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderStatus.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* MatrixMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMath.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* OrbitCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitCamera.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* GaussianSplatRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianSplatRenderer.swift; sourceTree = "<group>"; };
+		A10000000000000000000006 /* MetalSplatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSplatView.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000009 /* sample_scene.ply */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_scene.ply; sourceTree = "<group>"; };
+		A1000000000000000000000A /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
+		A1000000000000000000000B /* SceneChunkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneChunkLoader.swift; sourceTree = "<group>"; };
+		A1000000000000000000000C /* drjohnson_full_sh3.ply */ = {isa = PBXFileReference; lastKnownFileType = file; path = drjohnson_full_sh3.ply; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000000000000000000000A /* MetalSplatter in Frameworks */,
+				B1000000000000000000000B /* SplatIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* GaussianSplatMobile */,
+				00000000000000000000000A /* ValidationAssets */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000000 /* GaussianSplatMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* GaussianSplatMobile */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* App */,
+				000000000000000000000006 /* Math */,
+				000000000000000000000007 /* Renderer */,
+				000000000000000000000008 /* UI */,
+				000000000000000000000009 /* Resources */,
+				A10000000000000000000008 /* Assets.xcassets */,
+			);
+			path = GaussianSplatMobile;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000A /* AppLog.swift */,
+				A10000000000000000000001 /* GaussianSplatMobileApp.swift */,
+				A10000000000000000000002 /* RenderStatus.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* MatrixMath.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000004 /* OrbitCamera.swift */,
+				A1000000000000000000000B /* SceneChunkLoader.swift */,
+				A10000000000000000000005 /* GaussianSplatRenderer.swift */,
+				A10000000000000000000006 /* MetalSplatView.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		000000000000000000000008 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000007 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		000000000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000009 /* sample_scene.ply */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000A /* ValidationAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000C /* drjohnson_full_sh3.ply */,
+			);
+			path = ValidationAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* GaussianSplatMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H10000000000000000000003 /* Build configuration list for PBXNativeTarget "GaussianSplatMobile" */;
+			buildPhases = (
+				E10000000000000000000001 /* Sources */,
+				E10000000000000000000002 /* Frameworks */,
+				E10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaussianSplatMobile;
+			packageProductDependencies = (
+				D10000000000000000000002 /* MetalSplatter */,
+				D10000000000000000000003 /* SplatIO */,
+			);
+			productName = GaussianSplatMobile;
+			productReference = A10000000000000000000000 /* GaussianSplatMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					F10000000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = G10000000000000000000003 /* Build configuration list for PBXProject "GaussianSplatMobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+				D10000000000000000000001 /* XCLocalSwiftPackageReference "Vendor/MetalSplatter" */,
+			);
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10000000000000000000001 /* GaussianSplatMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000008 /* Assets.xcassets in Resources */,
+				B10000000000000000000009 /* sample_scene.ply in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000000000000000000000C /* AppLog.swift in Sources */,
+				B1000000000000000000000D /* SceneChunkLoader.swift in Sources */,
+				B10000000000000000000001 /* GaussianSplatMobileApp.swift in Sources */,
+				B10000000000000000000002 /* RenderStatus.swift in Sources */,
+				B10000000000000000000003 /* MatrixMath.swift in Sources */,
+				B10000000000000000000004 /* OrbitCamera.swift in Sources */,
+				B10000000000000000000005 /* GaussianSplatRenderer.swift in Sources */,
+				B10000000000000000000006 /* MetalSplatView.swift in Sources */,
+				B10000000000000000000007 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		G10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		G10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		H10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "3DGS Mobile";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GaussianSplatMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		H10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "3DGS Mobile";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GaussianSplatMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10000000000000000000003 /* Build configuration list for PBXProject "GaussianSplatMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G10000000000000000000001 /* Debug */,
+				G10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H10000000000000000000003 /* Build configuration list for PBXNativeTarget "GaussianSplatMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10000000000000000000001 /* Debug */,
+				H10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D10000000000000000000001 /* XCLocalSwiftPackageReference "Vendor/MetalSplatter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/MetalSplatter;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10000000000000000000002 /* MetalSplatter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10000000000000000000001 /* XCLocalSwiftPackageReference "Vendor/MetalSplatter" */;
+			productName = MetalSplatter;
+		};
+		D10000000000000000000003 /* SplatIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10000000000000000000001 /* XCLocalSwiftPackageReference "Vendor/MetalSplatter" */;
+			productName = SplatIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

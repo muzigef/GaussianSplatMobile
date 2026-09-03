@@ -1,0 +1,11 @@
+{
+  "source": "pjramg/gaussian_splatting / Dr Johnson / iteration 30000 (trained with the official Graphdeco implementation)",
+  "source_url": "https://huggingface.co/datasets/pjramg/gaussian_splatting/blob/main/FO_dataset/drjohnson/point_cloud/iteration_30000/point_cloud.ply",
+  "vertex_count": 3177554,
+  "sh_degree": 3,
+  "f_rest_property_count": 45,
+  "vertex_stride_bytes": 248,
+  "file_size_bytes": 788034924,
+  "sha256": "92f4898839ec4ad7f197cf6c74b89918b35ea712b4e41435593ccb152d22b7f5",
+  "selection": "complete source PLY (no vertex cropping)"
+}
